@@ -49,27 +49,27 @@ class IndexTracker:
         self.ax[0][0].set_ylabel('slice %s' % self.ind)
         self.imX.axes.figure.canvas.draw()
 
-file_path = "Nifti_Brain/E1_FA.nii"
+file_path = "Data/P1_FA.nii.gz"
 fa_img=nib.load(file_path)
 data=fa_img.get_fdata()
 
-file_path = "Nifti_Brain/E1_AD.nii"
+file_path = "Data/P1_AD.nii.gz"
 ad_img=nib.load(file_path)
 ad_data = ad_img.get_fdata()
 
-file_path = "Nifti_Brain/E1_MD.nii"
+file_path = "Data/P1_MD.nii.gz"
 md_img=nib.load(file_path)
 md_data = md_img.get_fdata()
 
-file_path = "Nifti_Brain/E1_RD.nii"
+file_path = "Data/P1_RD.nii.gz"
 rd_img=nib.load(file_path)
 rd_data = rd_img.get_fdata()
 
-file_path = "Nifti_Brain/E1_color_fa.nii"
+file_path = "Data/P1_color_fa.nii.gz"
 fac_img=nib.load(file_path)
 fac_data = fac_img.get_fdata()
 
-file_path = "Nifti_Brain/BrainMask_(1.42, 2.32, 3.76).nii"
+file_path = "Data/BrainMask_(1.42, 2.32, 3.76).nii"
 bm_img=nib.load(file_path)
 bm_data = bm_img.get_fdata()
 print("bm_data")
